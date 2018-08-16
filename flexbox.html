@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        background-color: #cdcdcd;
+        height: 100vh;
+        
+    }
+    .item{
+        
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        margin: 10px;
+        font-size: 20px;
+        font-weight: bold
+    }
+    .uno{
+        flex: 20%;
+        order: 3;
+    }
+    .dos{
+        flex: 30%;
+        order: 2;
+    }
+    .tres{
+        flex: 50%
+        order:1;
+    }
+    @media screen and (max-widht:480px){
+        contenedor{
+            background-color: lightgreen;
+
+        }
+    }
+    .boton{
+        width: 200px;
+        height: 100px;
+       device-width background-color: tomato;
+       device-width display: block;
+       device-width transition: all 2;
+
+    }
+    .boton:hover{
+        transform: scale(1.2);
+        transition: all 2;
+        background-color: violet
+    }
+</style>
+<body>
+    <a class="boton">Boton</a>
+    <div class="contenedor">
+        <div class="item uno">1</div>
+        <div class="item dos">2</div>
+        <div class="item tres">3</div>
+        <!-- <div class="item">4</div>
+        <div class="item">5</div> -->
+    </div>
+</body>
+</html>
